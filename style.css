@@ -1,0 +1,74 @@
+/* style file: a css sheet */
+
+
+
+#image {
+	padding: 125px 1px 1px 100px;
+}
+
+#image2 {
+	padding: 600px 1px 1px 1px;
+}
+
+#box {
+	font-family: arial;	
+	text-align: left;
+	font-size: 24px;
+	color: rgb(172, 172, 172);
+	padding: 5px 1px 1px 100px;
+	overflow:  hidden;
+}
+
+#box2 {
+	font-family: arial;	
+	text-align: left;
+	font-size: 16px;
+	color: rgb(172, 172, 172);
+	padding: 5px 1px 1px 100px;
+	overflow:  hidden;
+}
+
+#box3 {
+	font-family: arial;	
+	text-align: left;
+	font-size: 12px;
+	color: rgb(172, 172, 172);
+	padding: 5px 1px 1px 100px;
+	overflow:  hidden;
+}
+
+#box4 {
+	font-family: arial;	
+	text-align:  right;
+	font-size: 36px;
+	color: rgb(172, 172, 172);
+	padding: 5px 1px 1px 100px;
+}
+
+#box5 {
+	font-family: courier new;
+	text-align: right;	
+	font-size: 36px;
+	color: rgb(172, 172, 172);
+	padding: 1px 1px 1px 200px;
+}
+
+.button {
+  border: none;
+  border-radius: 4px;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color:rgb(138 180 248);}
+
+p {
+margin: 25px;
+height: 100%;
+width:  50%;
+}
