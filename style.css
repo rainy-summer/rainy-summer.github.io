@@ -1,74 +1,236 @@
-/* style file: a css sheet */
-
-
-
-#image {
-	padding: 125px 1px 1px 100px;
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
-#image2 {
-	padding: 600px 1px 1px 1px;
+
+img {
+	max-width: 100%;
 }
 
-#box {
-	font-family: arial;	
-	text-align: left;
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* Text Styling */
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
 	font-size: 24px;
-	color: rgb(172, 172, 172);
-	padding: 5px 1px 1px 100px;
-	overflow:  hidden;
+	font-weight: 400;
+	background-color: black;
 }
 
-#box2 {
-	font-family: arial;	
-	text-align: left;
-	font-size: 16px;
-	color: rgb(172, 172, 172);
-	padding: 5px 1px 1px 100px;
-	overflow:  hidden;
+
+h1 {
+	font-family: "Island Moments", sans-serif;
+	font-size: 85px;
+	color: black;
+	margin: 0 auto;
 }
 
-#box3 {
-	font-family: arial;	
-	text-align: left;
-	font-size: 12px;
-	color: rgb(172, 172, 172);
-	padding: 5px 1px 1px 100px;
-	overflow:  hidden;
+h2 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 18px;
+	color: black;
+	margin: 0 auto;
 }
 
-#box4 {
-	font-family: arial;	
-	text-align:  right;
-	font-size: 36px;
-	color: rgb(172, 172, 172);
-	padding: 5px 1px 1px 100px;
+h3 {
+	font-family: "Island Moments", sans-serif;
+	font-size: 85px;
+	color: white;
+	margin: 0 auto;
 }
 
-#box5 {
-	font-family: courier new;
-	text-align: right;	
-	font-size: 36px;
-	color: rgb(172, 172, 172);
-	padding: 1px 1px 1px 200px;
+h4 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 18px;
+	color: white;
+	margin: 0 auto;
 }
-
-.button {
-  border: none;
-  border-radius: 4px;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button1 {background-color:rgb(138 180 248);}
 
 p {
-margin: 25px;
-height: 100%;
-width:  50%;
+	font-family:"Source Sans Pro", sans-serif;
+	font-size: 14px;
+	color: white;
+	margin: 0 auto;
 }
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+}
+
+/* Container Styling */
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+
+}
+
+.container-fluid {
+	width: 100%;
+	height: 100px;
+}
+
+.right-align {
+	float:  right;
+}
+
+.left-align {
+	float: left;
+}
+
+/* Header Styling */ 
+
+
+header {
+	background-color: black;
+}
+
+
+#logo>a {
+	display: inline-block;
+	width: 75px;
+	padding-top: 10px;
+
+}
+
+header nav {
+	width:  100vh;
+}
+
+.nav-link {
+	margin-top:  15px;
+	
+}
+
+.nav-link a {
+	color: #ffff;
+	text-decoration: none;
+	font-family:  'Source Sans Pro', sans-serif;
+	font-size:  18px;
+	margin-right: 70px;
+}
+
+
+.list {
+	color: #ffff;
+	text-decoration: none;
+	font-family:  'Source Sans Pro', sans-serif;
+	font-size:  16px;
+	margin-right: 30px;
+}
+
+#CTA {
+	text-align: center;
+	display:  inline-block;
+	background-color: maroon;
+	padding:  20px;
+	border-radius:2em;
+	width:  125px;
+}
+
+
+
+#splash {
+	height: 500px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image:  url("./images/Bag.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#hero-chunk {
+	width:  400px;
+	color: black;
+	margin-top: 180px;
+	margin-left:  100px;
+}
+
+#hero h1 {
+	margin-bottom:  0px;
+	line-height:  0.6;
+	
+}
+
+#organization {
+	width:  400px;
+	color: #fff;
+	margin-top: 80px;
+	margin-left: 500px;
+}
+
+#note {
+	width:  400px;
+	color: black;
+	margin-top: 700px;
+	margin-left:  150px;
+}
+
+#moon {
+	margin-top: 80px;
+	margin-left: -150px;
+	height: 200px;
+}
+
+#bats {
+	display: block;
+	height: 500px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -300px;
+	background-image:  url("./images/bats.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 2em;
+}
+
+#founder-image {
+	margin-top: 50px;
+	margin-left: 200px;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+
+#founder-text {
+	width:  400px;
+	color: #fff;
+	margin-top: -300px;
+	margin-left: 750px;
+}
+
+a.button {
+	background-color: maroon;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+}
+
+a.button:hover {
+	background-color: darkred;
+
+}
+
