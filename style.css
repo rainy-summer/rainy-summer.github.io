@@ -152,7 +152,7 @@ header nav {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	background-image:  url("./images/Bag.jpg");
+	background-image:  url("Bag.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -198,7 +198,7 @@ header nav {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -300px;
-	background-image:  url("./images/bats.png");
+	background-image:  url("bats.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
