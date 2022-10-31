@@ -1,0 +1,59 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+	font-family: "Creepster", sans-serif;
+	font-size: 85px;
+	color: white;
+}
+
+
+
+#arrow {
+	color: black;
+	width: 100%;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#audio {
+	color: black;
+	width: 50%;
+	margin-top: -50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+
+#button {
+	background-color: red;
+	font-family: Creepster;
+	border-color: maroon;
+}
+
+#toast {
+	background-color: black;
+	text-color: white;
+	margin-top: 200px;
+}
+
+#center {
+   width: 1000px;
+   height: 200px;
+   margin-top: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 300px;
+}
+
+.bg {
+  background-image: url("https://media.tenor.com/8k9yFg-2jrgAAAAC/halloween-pumpkin.gif");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
