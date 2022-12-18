@@ -1,0 +1,639 @@
+/* Visualizing the layout */
+
+
+/* Colors
+
+Dark Green #121D13
+Light Green #B9C2B0
+Red #F1444C */
+
+/* I've been viewing the Media Queries on the screen size of an iPhone SE*/
+
+/* Universal Rules */
+
+/* box model Fix */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+
+.row:before,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* image rules */
+
+img {
+	max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  img { max-width: 60vw;}
+}
+
+/* Type Hierarchy */
+
+@-ms-viewport {
+
+width: device-width;
+
+}
+@viewport {
+
+width: device-width;
+
+}
+
+
+body {
+	font-family: "EB Garamond", serif;
+	color: #B9C2B0;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #121D13;
+}
+
+h1 {
+	font-family: "Playfair Display", serif;
+	color: #B9C2B0;
+	font-size: 300px;
+	font-weight: bold;
+	line-height: 15rem;
+	margin-top: 15%;
+	margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+  	font-size: 48px;
+  	line-height: 3.5rem;
+  	margin-bottom: 1rem;
+  	width: 15rem;
+  }
+}
+
+h2 {
+	font-family: "Playfair Display", serif;
+	color: #B9C2B0;
+	font-size: 85px;
+	font-weight:bold;
+	font-style: italic;
+	line-height:6rem;
+	margin-bottom:3rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  h2{
+  	font-size: 48px;
+  	line-height: 3.5rem;
+  	margin-bottom: 1rem;
+  	width: 15rem;
+  }
+}
+
+
+h3 {
+	font-family: 'Playfair Display', serif;
+	color: #B9C2B0;
+	font-size: 60px;
+	font-weight: bold;
+	margin: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  h3{
+  	font-size: 36px;
+  	line-height: 3.5rem;
+  	margin-bottom: 1rem;
+  	width: 15rem;
+  }
+}
+
+
+h4 {
+	font-family: "Playfair Display", serif;
+	font-size: 18px;
+	font-style: italic;
+	color: #B9C2B0;
+	margin: 0;
+}
+
+h5 {
+	font-family: 'Playfair Display', serif;
+	color: #B9C2B0;
+	font-size: 36px;
+	font-weight: bold;
+	margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  h5{
+  	font-size: 24px;
+  	line-height: 2rem;
+  	margin-bottom: 1rem;
+  	width: 15rem;
+  }
+}
+
+p {
+	font-family: 'EB Garamond',serif;
+	color: #B9C2B0;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	line-height:1.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  p {font-size: 18px;
+  margin-top: 1rem;
+  width: 15rem;
+  line-height: 2rem;}
+}
+
+a {
+	text-decoration: none;
+	font-family: 'EB Garamond';
+	color: #B9C2B0;
+}
+
+a:hover {
+	color: #F1444C
+}
+
+
+
+
+.hero-text {
+	margin-top: 30%;
+	letter-spacing: -0.02em;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-text {
+  font-size: 48px;
+  line-height: 5rem;
+  margin-top: 5rem;
+	margin-bottom: 0.1rem;}
+}
+
+
+/* Button Styling */
+
+a.button {
+	font-family: 'EB Garamond', serif;
+	color: #B9C2B0;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 0.5em 0.5em;
+	border-style: solid;
+	border-color: #B9C2B0;
+}
+
+a.button:hover {
+	color: #F1444C;
+	border-color: #F1444C;
+}
+
+/* Lines */
+
+.line-1 {
+  height: 3px;
+  background: #F1444C;
+  width:300px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .line-1 { 
+  	align-self: left;
+  	margin-left: 0.25rem;
+  	width:50vw}
+}
+
+
+.line-2 {
+  height: 3px;
+  background: #F1444C;
+  width: 50vw;
+  align-self: center;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .line-2 { 
+  	align-self: left;
+  	margin-left: 0.25rem;}
+}
+
+.line-3 {
+  height: 3px;
+  background: #F1444C;
+  width: 95vw;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  align-self: center;
+}
+
+
+.line-4 {
+  border-left: 5px solid #F1444C;
+  height: 300px;
+  margin-right:2rem;
+  position:absolute;
+}
+
+.line-5 {
+  border-left: 5px solid #F1444C;
+  height: 120px;
+  position: absolute;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .line-5 { 
+  	display: none;}
+}
+
+
+ul {
+	list-style-type: none;
+}
+
+
+.tighten {
+	letter-spacing: -0.02em;
+}
+
+
+/* Layout Styling */
+
+.container-fluid-1 {
+	width: 100%;
+	overflow: hidden;
+}
+
+/* Header Rules */
+
+
+
+
+header {
+	background-color: #121D13;
+	color: #B9C2B0;
+	position: fixed;
+	height: 120px;
+	z-index: 4;
+	font-size: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  header {display: none;
+  }
+}
+
+
+.icon {
+	width: 100px;
+}
+
+#logo a {
+	display: inline-block;
+	padding: 1rem;
+	max-width: 100px;
+	margin-top: 15px;
+	align-self: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #logo {display: none;
+  }
+}
+
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  header ul {display: none;
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+  	.icon {display: none;
+  	width: 20px;
+  }
+}
+
+
+/* Homepage Styling & Rules */
+
+#hero {
+	background-image: url("../Images/HeroImage.png");
+	background-size: cover;
+	background-color: #121D13;
+	height: 90vh;
+}
+
+@media only screen and (max-width: 600px) {
+  #hero { 
+  	height: 60vh;}
+}
+
+#hero-chunk {
+	width: 900px;
+	color: #fff;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  #hero-chunk { 
+  	margin-top: 5rem;
+  	margin-left: 1rem;}
+}
+
+/* First Chunk */
+
+
+.text-grid {
+		display:grid;
+	grid-template-columns:
+		repeat(auto-fit, minmax(15rem, 1fr));
+
+	align-self: center;
+
+	margin-left:6rem;
+	margin-bottom: 5rem;
+	color: #B9C2B0;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-grid { 
+  	align-self: left;
+  	margin-left: 0.5rem;}
+}
+
+
+.rightside-image {
+	width: 500px;
+}
+
+/* Second Chunk */
+
+.featured {
+	margin-top: 70px;
+	width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .featured { 
+  	margin-top: 2rem;}
+}
+
+
+#moveondown {
+	margin-top: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  #moveondown { 
+  	margin-top: 0.25rem;}
+}
+
+/* Mission */
+
+
+
+.mission-grid {
+		display:grid;
+	grid-template-columns:
+		repeat(auto-fit, minmax(200px, 1fr));
+
+	column-gap: 0.5rem;
+	align-self: center;
+	margin-top:50px;
+	margin-left:150px;
+	margin-bottom: 5rem;
+	color: #B9C2B0;
+}
+
+@media only screen and (max-width: 600px) {
+  .mission-grid { 
+  	margin-top: 4rem;
+  	margin-left: 1rem;}
+}
+
+.mission-card {
+	width:500px;
+	object-fit: cover;
+	margin-top:125px;
+	}
+
+
+@media only screen and (max-width: 600px) {
+  .mission-card { 
+  	margin-top: 0.25rem;}
+}
+
+/* Product Page Styling & Rules */
+
+
+.headertext {
+	margin-top: 40%;
+	width:25rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .headertext { 
+  	margin-top: 1rem;}
+}
+
+.horizontal-header {
+	margin-top:10%;
+	display: flex;
+	flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .horizontal-header { 
+  	margin-top: 1rem;}
+}
+
+.stacked > * {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+.product-grid {
+	display:grid;
+	column-gap: .5rem;
+	margin-left: 5rem;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+@media only screen and (max-width: 600px) {
+  .product-grid { 
+  	margin-left: 0.5rem;
+  	grid-gap: 1rem;}
+}
+
+.card__img{
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	object-fit: cover;
+}
+
+
+.product-card{
+	border-color: #B9C2B0;
+	border-style: solid;
+	aspect-ratio: 1 / 1.25;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .product-card { 
+  	aspect-ratio: 1 / 1;}
+}
+
+.product-descriptions {
+	align-self: end;
+	margin: 1rem;
+
+}
+
+
+/* About Us Page Styling & Rules */
+
+.headertext-2 {
+	margin-top: 90%;
+	text-align: left;
+	width:300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .headertext-2 { 
+  	margin-top: 1rem;
+  }
+}
+
+.aboutusimage {
+	margin-top: 8rem;
+	width:500px;
+}
+
+.divider-text {
+	margin-left: 7%;
+}
+
+
+#newsletter {
+	height: 20vh;
+	border-radius:0;
+}
+
+@media only screen and (max-width: 600px) {
+  #newsletter { 
+  	width: 15rem;
+  	margin-bottom: 10rem;
+  }
+}
+
+#newsletter .row {
+
+}
+
+#newsletter .btn {
+	background-color: none;
+
+	border-color: #B9C2B0;
+	border-radius: 0;
+}
+
+#newsletter .btn:hover {
+	background-color: #B9C2B0;
+}
+
+.aboutus-text {
+	width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutus-text { 
+  	width: 15rem;
+  }
+}
+
+
+
+/* Vendors Page Styling & Rules */
+.headertext-2 {
+	align-self:right;
+	width:400px;
+	margin-bottom: 20%;
+}
+
+
+.vendor-card {
+	width: 500px;
+	overflow: hidden;
+	margin-bottom: 7em;
+}
+
+
+.list-grid {
+	display:grid;
+	grid-template-columns:
+		repeat(auto-fit, minmax(15rem, 1fr));
+
+	margin-left:150px;
+	margin-bottom: 5rem;
+	column-gap:10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .list-grid { 
+  	margin-left: 1rem;
+  	column-gap: 0%;
+  }
+}
+
+/* Footer Styling & Rules */
+
+footer {
+	background-color: #121D13;
+	color: #B9C2B0;
+	position: relative;
+	align-items: center;
+	padding: 3rem;
+	z-index: 4;
+	border-top: solid #B9C2B0;
+}
+
+
+.footer-logo {
+	width: 100px;
+
+}
+
